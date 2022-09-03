@@ -1,0 +1,33 @@
+* {
+    border: red;
+    border-width: 3px;
+    border-style: solid;
+}
+body {
+    /* background-color: #D4F6CC; */
+}
+
+.navbar {
+    background-color: #003865;
+}
+
+.nav-link {
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.active {
+    color: #D4F6CC;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+.about-main-div {
+    filter: brightness(90%);
+}
