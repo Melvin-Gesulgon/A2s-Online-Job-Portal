@@ -21,9 +21,12 @@ font-family: 'Roboto', sans-serif; */
     margin-bottom: 350px;
     font-family: 'Roboto', sans-serif;
 }
+#slogan .row{
+    align-items: center;
+}
 
 #banner{
-    font-size: 90px;
+    font-size: 100px;
     margin-bottom: 50px;
 }
 
@@ -33,6 +36,11 @@ font-family: 'Roboto', sans-serif; */
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
+    border-radius: 50px;
+}
+.card-footer{
+    background-color: rgba(180, 170, 170, 0);
+    text-align: center;
 }
 #categories{
     margin-bottom: 250px;
