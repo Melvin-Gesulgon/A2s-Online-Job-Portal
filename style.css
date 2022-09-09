@@ -1,11 +1,9 @@
 * {
     border: red;
-    border-width: 3px;
+    border-width: 1px;
     border-style: solid;
 }
-body {
-    /* background-color: #D4F6CC; */
-}
+
 
 .navbar {
     background-color: #003865;
@@ -28,6 +26,39 @@ p {
     font-family: 'Lato', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .about-main-div {
     filter: brightness(90%);
+}
+
+.employer-review {
+    background-color: grey;
+    height: 100px;
+    width: 350px;
+    border-radius: 20px;
+    flex-grow: 1;
+}
+
+.talent-profile-box {
+    background-color: grey;
+    height: 500px;
+    width: 350px;
+    border-radius: 20px;
+    flex-grow: 1;
+}
+
+.jobs-completed {
+    height: 100px;
+    width: 100px;
+    flex-grow: 1;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.flex-container {
+    display: flex;
 }
