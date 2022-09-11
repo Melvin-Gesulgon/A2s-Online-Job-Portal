@@ -86,3 +86,13 @@ button {
     z-index: 2;
 
 }
+
+.talent-category-box {
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: max;
+}
