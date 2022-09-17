@@ -1,0 +1,81 @@
+/* Index.html */
+
+.tagline{
+    font-size: 80px!important;
+    margin: 0;
+}
+
+.tagline-sm{
+    font-size: 30px;
+}
+
+#slogan button, #news button{
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+#slogan h5{
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+#slogan .row div, #news .row div{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#categoryCards{
+    margin-top: 50px;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#categoryCards .card{
+    width: 300px;
+    height: 70px;
+    margin: 10px;
+    border-radius: 2em;
+    background-color: #003865;
+    color: #F2F2F2;
+    box-shadow: 3px 3px rgba(51, 51, 51, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1 0 21%;
+}
+
+#categoryCards h4{
+    margin-bottom: 0;
+}
+
+#categoryCards .card:hover{
+    filter: brightness(50%);
+}
+
+#news{
+    background-color: #003865;
+    border-radius: 5em;
+    padding: 5em;
+}
+
+#news h3, #news p{
+    color: #F2F2F2
+}
+
+@media only screen and (max-width: 600px){
+    #categoryCards .card{
+        flex: 1 0 30%;
+    }
+}
+
+/* footer */
+
+.footer .row{
+    display: flex;
+    flex-direction: column;
+}

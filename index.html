@@ -3,183 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>A2S- Your Access to Success</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/nav-footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
 </head>
-<style>
-*{
-    margin: 0;
-    font-family: 'Lato', sans-serif;
+<script>
+    function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
 }
-body{
-    background: #ECE9E6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-#navbar{
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-    align-items: center;
-    background-color: #003865;
-}
-
-#navbar img{
-    height: 80px;
-    padding-left: 20px;
-}
-
-#navbar ul{
-    display: flex;
-    list-style: none;
-    height: 100px;
-    align-items: center;
-    justify-content: space-around;
-    width: 1100px;
-    font-size: 30px;
-    padding-right: 20px;
-}
-#navbar a{
-    text-decoration: none;
-    color: white;
-    background-color: #003865;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 20px;
-    transition: 0.2s;
-}
-
-#navbar a:hover{
-    color: #575656;
-    background-color: #3CCF4E;
-    font-size: 32px;
-}
-#navbar input{
-    height: 50px;
-    border-radius: 20px 0 0 20px;
-    border: #575656;
-    border-style: solid;
-    width: 300px;
-    text-align: center;
-    font-size: 20px;
-}
-#navbar i{
-    padding-left: 5px;
-    padding-top: 3px;
-    padding-bottom: 9px;
-    padding-right: 10px;
-    border: #003865;
-    border-style: solid;
-    border-radius: 0 20px 20px 0;
-    background-color: #003865;
-    color: white;
-}
-#navbar i:hover{
-    color: #575656;
-    background-color: #3CCF4E;
-    border: #3CCF4E;
-    border-style: solid;
-}
-</style>
+</script>
 <body>
-    <!-- navigation -->
-    <nav>
-        <div id="navbar">
-            <div>
-                <img src="A2Slogo.png" alt="">
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><input type="text" placeholder="search talent/job..."><span><i class="fa-solid fa-magnifying-glass"></i></span></li>
-                    <li><a href="#">Login</a></li>
-                    <li><a href="#" style="background-color: #EF5B0C; color:white">Signup</a></li>
-                </ul>
-            </div>
+    <header>
+        <div class="brand">
+            <a href="index.html">
+                <img src="images/logo.png"> Access Success</a>
+            <a></a>
         </div>
-    </nav>
-    <!-- slogan banner -->
-    <div class="container" id="slogan">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html" id="signupbtn">Signup</a></li>
+            </ul>
+        </nav>
+        <div id="toggle-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-view">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html" id="signupbtn">Signup</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container"id="slogan">
         <div class="row">
-            <div class="col-md-7">
-                <h1 id="banner">
-                    your<br><b>A</b>ccess<br> to <b>S</b>uccess
-                </h1>
-                <button class="btn">Find Work</button>
-                <button class="btn">Find Talent</button>
+            <div class="col-md-6">
+                <h5 class="tagline">Access</h5>
+                <h5 class="tagline-sm">your
+                    <span class="tagline">Success</span>
+                </h5>
+                <div>
+                    <span>
+                        <button class="orangebutton large">Find Work</button>
+                        <button class="greenbutton large">Find Talent</button>
+                    </span>
+                    
+                </div>  
+            </div id="slogan-btn">
+            <div class="col-md-6 image">
+                <img src="images/banner.svg" alt="" width="100%">
             </div>
-            <div class="col md-5">
-                <img src="undraw_interview_re_e5jn (1).svg" alt="" width="100%">
-            </div>
-        </div>
+        </div>   
     </div>
-    <!-- categories -->
+
     <div class="container" id="categories">
-        <h1>Search by Category</h1>
+        <h2>Search by Category</h2>
         <div id="categoryCards">
             <div class="card">
-                <div class="card-body"></div>
-                <div class="card-footer">Category 1</div>
+                <h4>IT & Development</h4>
             </div>
             <div class="card">
-                <div class="card-body"></div>
-                <div class="card-footer">Category 2</div>
+               <h4>Design & Creative</h4>
             </div>
             <div class="card">
-                <div class="card-body"></div>
-                <div class="card-footer">Category 3</div>
+                <h4>Sales and Marketing<h4>
             </div>
             <div class="card">
-                <div class="card-body"></div>
-                <div class="card-footer">Category 4</div>
+                <h4>Writing & Translation<h4>
             </div>
             <div class="card">
-                <div class="card-body"></div>
-                <div class="card-footer">Category 5</div>
+                <h4>Admin & Support<h4>
             </div>
             <div class="card">
-                <div class="card-body"></div>
-                <div class="card-footer">Category 6</div>
+                <h4>Finance & Accounting<h4>
             </div>
             <div class="card">
-                <div class="card-body"></div>
-                <div class="card-footer">Category 7</div>
+                <h4>Engineering & Architecture<h4>
             </div>
             <div class="card">
-                <div class="card-body"></div>
-                <div class="card-footer">Category 8</div>
-            </div>
-            <div class="card">
-                <div class="card-body"></div>
-                <div class="card-footer">Category 9</div>
-            </div>
-            <div class="card">
-                <div class="card-body"></div>
-                <div class="card-footer">Category 10</div>
+                <h4>Legal<h4>
             </div>
         </div>
     </div>
-    <!-- link to article -->
-    <div class="container" id="article">
+
+    <div class="container" id="news">
         <div class="row">
-            <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ullam odio deserunt, ab eligendi quaerat quas! Deserunt pariatur eligendi praesentium dolores fugiat, cum cumque dolorem quibusdam autem qui nihil incidunt!</p>
-                <button class="btn">Learn More</button>
+            <div class="col-md-6" id="caption">
+                <h3>Sample Article Title</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos quidem, esse repellendus amet cupiditate libero explicabo cumque ipsum fuga assumenda maiores quas eveniet, blanditiis mollitia nulla magnam consequatur delectus incidunt.</p>
+                <button class="greenbutton regular">Learn More</button>
             </div>
-            <div class="col-md-6">
-                <img src="https://picsum.photos/200/" alt="" width="100%">
+            <div class="col-md-6" id="image">
+                <img src="images/logo.png" alt="" width="100%">
             </div>
+            
         </div>
     </div>
-    
+
+    <footer class="footer">
+        <div class="footer container">
+            <div class="footer-row">
+                <div class="footer-items">
+                    <ul>
+                        <h4>Find Talent</h4>
+                        <li><a href="#">How to Hire</a></li>
+                        <li><a href="#">Limitation</a></li>
+                        <li><a href="#">Report Talent</a></li>
+                    </ul>
+                </div>
+                <div class="footer-items"> 
+                    <ul>
+                        <h4>Find Work</h4>
+                        <li><a href="#">How to find work</a></li>
+                        <li><a href="#">Tips</a></li>
+                        <li><a href="#">Report Client</a></li>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <ul>
+                        <h4>Resources</h4>
+                        <li><a href="#">Help and Support</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <ul>
+                        <li><h4>Company</h4></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul> 
+                </div>
+            </div>
+            <div class="social-links">
+                <h4>Social Handles: </h4>
+            </div>
+        </div>
+    </footer>
+
 </body>
-<script src="js/bootstrap.js"></script>
 </html>
