@@ -1,0 +1,135 @@
+#login-panel, #signup-panel{
+    margin-top: 100px;
+}
+#login, #signup{
+    height: 600px;
+    background-color: #003865;
+    border-radius: 50px;
+    text-align: center;
+    color: #f2f2f2;
+    margin-bottom: 100px;
+}
+
+#login-image{
+    margin-bottom: 50px;
+}
+#login #e, #pw{
+    width: 320px;
+    margin-bottom: 10px;
+    height: 56px;
+    border-radius: 26px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-style: none;
+}
+
+#Remember{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+#login h1, #signup h1{
+    padding-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'Roboto';
+    font-size: 50px;
+}
+
+#loginbtn, #signupbtn{
+    width: 320px;
+    min-width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 56px;
+    border-radius: 26px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif; 
+    box-shadow: 3px 3px rgba(51, 51, 51, 0.3);
+    border-style: none;
+    transition: 0.2s;
+    background-color: #3CCF4E;
+    color: #f2f2f2;
+    margin-bottom: 50px;
+    font-weight: bold; 
+}
+
+#loginbtn:hover, #signupbtn:hover{
+    filter: brightness(65%);
+    font-size: 26px;
+}
+
+#login p{
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#login a{
+    color: #EF5B0C;
+}
+
+#login a:hover{
+    filter:brightness(150%);
+}
+    
+#signup #radio{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+#signup h1{
+    text-align: center;
+}
+#signup #rad{
+    text-align: start;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+#rad div{
+    display: flex;
+    width: 350px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+#login-panel .row .col-md-6, #signup-panel .row .col-md-6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.signup-choices{
+    height: 100px;
+    margin-bottom: 40px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in;
+    border-radius: 5em;
+    margin-left: 15px;
+    margin-right: 15px;
+    min-width: 300px;
+}
+
+.signup-choices:hover{
+    filter: brightness(50%);
+}
+
+.talent{
+    background-color: #EF5B0C;
+}
+
+.employer{
+    background-color: #3CCF4E;
+}
+
+.signup-choices label, .signup-choices i{
+    font-size: 20px;
+    font-weight: bold;
+}
+

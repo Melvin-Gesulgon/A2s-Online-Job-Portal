@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/nav-footer.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Job Post</title>
+</head>
+<script>
+    function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+</script>
+<body>
+    <header>
+        <div class="brand">
+            <a href="../index.html">
+                <img src="../images/logo.png"> Access Success</a>
+            <a></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../login.html">Login</a></li>
+                <li><a href="../signup.html" id="signupbtn">Signup</a></li>
+            </ul>
+        </nav>
+        <div id="toggle-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-view">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../login.html">Login</a></li>
+                <li><a href="../signup.html" id="signupbtn">Signup</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container" id="apply">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="apply-job">
+                    <h2>Position</h2>
+                    <h3>Company XYZ</h3>
+                    <br>
+                    <p>National Capital Region</p>
+                    <p>PHP 25, 000 - PHP 30, 000</p>
+                    <div id="line-break"></div>
+                    <h4><i class="fa-solid fa-briefcase"></i> Min. 1 year exp</h4>
+                    <h4><i class="fa-solid fa-book-open"></i> Bachelor/College Degree in Engineering</h4>
+                </div>
+                <div>
+                    <img src="../images/apply.svg" alt="" width="90%">
+                </div>
+                
+            </div>
+            <div class="col-md-6">
+                <div id="apply-profile">
+                    <h2>Juan Dela Cruz</h2>
+                    <h3>Engineer</h3>
+                    <br>
+                    <p>juandelacruz@gmail.com</p>
+                    <p>0919-876-54321</p>
+                    <div id="line-break"></div>
+                    <h4>Resume/Curriculum Vitae</h4>
+                    <a href="#">juandelacruz.pdf</a><br>
+                </div>
+                <div id="apply-write">
+                    <h4>Write additional information for the employer.</h4>
+                    <textarea name="write" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div id="apply-button">
+                    <button class="graybutton regular">back</button>
+                    <button class="graybutton regular">review profile</button>
+                    <button class="orangebutton regular">Submit Application</button>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-items">
+                        <ul>
+                            <h4>Find Talent</h4>
+                            <li><a href="#">How to Hire</a></li>
+                            <li><a href="#">Limitation</a></li>
+                            <li><a href="#">Report Talent</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-items"> 
+                        <ul>
+                            <h4>Find Work</h4>
+                            <li><a href="#">How to find work</a></li>
+                            <li><a href="#">Tips</a></li>
+                            <li><a href="#">Report Client</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-items">
+                        <ul>
+                            <h4>Resources</h4>
+                            <li><a href="#">Help and Support</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-items">
+                        <ul>
+                            <li><h4>Company</h4></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Mission</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul> 
+                    </div>
+                </div>
+                <div class="social-links">
+                    <h4>Social Handles: </h4>
+                </div>
+            </div>
+        </footer>
+    </footer>
+</body>
+</html>
