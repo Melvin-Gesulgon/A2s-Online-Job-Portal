@@ -115,6 +115,10 @@ a:hover{
     color: #3CCF4E;
 }
 
+.nl{
+    text-decoration: none!important;
+}
+
 /* Sample Styling of Box */
 
 #samplebox{
