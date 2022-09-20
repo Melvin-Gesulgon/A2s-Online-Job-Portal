@@ -1,0 +1,110 @@
+/* * { */
+    /* border: red;
+    border-width: 1px;
+    border-style: solid; */
+/* } */
+
+
+.navbar {
+    background-color: #003865;
+}
+
+.nav-link {
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.active {
+    color: #D4F6CC;
+}
+
+
+/* h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+} */
+
+.about-main-div {
+    filter: brightness(90%);
+}
+
+.employer-review {
+    background-color: grey;
+    height: 100px;
+    width: 350px;
+    border-radius: 20px;
+    flex-grow: 1;
+}
+
+.talent-profile-box {
+    background-color: grey;
+    height: 500px;
+    width: 350px;
+    border-radius: 20px;
+    flex-grow: 1;
+}
+
+.jobs-completed {
+    height: 100px;
+    width: 100px;
+    flex-grow: 1;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+button {
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    margin: 10px;
+}
+.project-end-btn {
+    justify-content: space-evenly;
+}
+
+.talent-div-1 {
+    flex-grow: 2;
+}
+
+.talent-div-2 {
+    flex-grow: 1;
+}
+
+.or-button {
+    position: relative;
+    z-index: 2;
+
+}
+
+.talent-category-box {
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    /* width: max; */
+}
+
+.talent-category-box:hover  {
+    color: #333333;
+    text-decoration: underline;
+    filter: brightness(50%);
+}
+
+.talent-form-label {
+    background-color: #3CCF4E;
+    color: #F2F2F2;
+}
