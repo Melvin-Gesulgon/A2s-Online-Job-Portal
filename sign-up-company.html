@@ -42,27 +42,47 @@
 </head>
 <body style="background-color: #F2F2F2;">
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="A2S.png" style="height: 2rem;"> </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-            </ul>
-          </div>
+    <link rel="stylesheet" href="css/nav-footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<script>
+    function toggleMobileMenu(menu) {
+    menu.classList.toggle('open');
+}
+</script>
+<body>
+    <header>
+        <div class="brand">
+            <a href="index.html">
+                <img src="images/logo.png"> Access Success</a>
+            <a></a>
         </div>
-      </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html" id="signupbtn">Signup</a></li>
+            </ul>
+        </nav>
+        <div id="toggle-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-view">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html" id="signupbtn">Signup</a></li>
+            </ul>
+        </div>
+    </header>
       <!-- navbar end -->
 
       <!-- main container start -->
@@ -73,7 +93,7 @@
         <div class="container"> 
           <div class="row" style="padding: 20px;">
             
-              <div id="talent-signup-form-container" class="col-md-4" style="background-color: #003865; border-radius: 20px; padding: 20px;">
+              <div id="talent-signup-form-container" class="col-md-5" style="background-color: #003865; border-radius: 20px; padding: 20px; height: 90%;">
                 <div class="flex-container">
                   <h3 class="text-center" style="color: #D9D9D9; margin: 5px;">Complete your dream roster.<h3> 
 
@@ -83,25 +103,27 @@
                     <form action="">
                       <!-- <div style="display: flex; flex-wrap: nowrap; justify-content: space-evenly; margin-top: 55px;"> -->
                         
-                            <input class="mb-3 mt-4 form-control" type="text" required placeholder="First name">
+                            <input class="form-control" type="text" required placeholder="First name">
                             <br>
-                            <input class="mb-3 mt-3 form-control " type="text" required placeholder="Last name">
+                            <input class="form-control " type="text" required placeholder="Last name">
                           <!-- </div> -->
                           <br>
                           <!-- <div style="display: flex; flex-wrap: nowrap; justify-content: space-evenly;"> -->
-                            <input class="mb-3 mt-3 form-control " type="email" required placeholder="Email">
+                            <input class="form-control " type="email" required placeholder="Email">
                             <br>
-                            <input class="mb-3 mt-3 form-control " type="text" required placeholder="Company name">
+                            <input class="form-control " type="text" required placeholder="Company name">
                           <!-- </div> -->
                             <br>
                           <!-- <div style="display: flex; flex-wrap: nowrap; justify-content: space-evenly;">  -->
-                              <input class="mb-3 mt-3 form-control " type="password" required placeholder="Enter password">
+                              <input class="form-control " type="password" required placeholder="Enter password">
                               <br>
-                              <input class="mb-3 mt-3 form-control " type="password" required placeholder="Confirm password">
+                              <input class="form-control " type="password" required placeholder="Confirm password">
                           <!-- </div> -->
                           <br>
-                          <button id="buttonbox signup-talent-btn" class="greenbutton regular" style="margin-left: 5%;">Create account</button>
-                    
+                          <div class="d-flex justify-content-center">
+                            <button id="buttonbox signup-talent-btn" class="greenbutton regular">Create account
+                            </button>
+                          </div>
                     </form>
                   </div>    
                 </div>
@@ -110,7 +132,7 @@
                 
               </div>
               <!-- end of first column -->
-              <div class="col-md-8">
+              <div class="col-md-7">
                 <img class="img-fluid" id="hero-signup-form"  src="talent-sign-up-form.svg" alt="" style="opacity: 80%; border-radius: 20px; margin-left: 10px;">
               </div>
           
