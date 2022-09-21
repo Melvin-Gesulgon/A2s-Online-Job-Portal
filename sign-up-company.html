@@ -100,31 +100,51 @@
                   <h3 class="text-center" style="color: #D9D9D9;"> Sign up NOW!</h3>
                    
                   <div id="talent-form-signup">
-                    <form action="">
-                      <!-- <div style="display: flex; flex-wrap: nowrap; justify-content: space-evenly; margin-top: 55px;"> -->
+                    
+                    <form action="login.html">
+                      
+                        
+                      <input class="form-control" type="text" required id="fName" placeholder="First name" style="margin-bottom: 10px;">
+                      <br>
+                      <input class="form-control " type="text" required id="lName"    placeholder="Last name" style="margin-bottom: 10px;">
+                                              <br>
+                    
+                      <input class="form-control " type="email" required id="email"   placeholder="Email" style="margin-bottom: 10px;">
+                      <br>
+                      
+                        <input class="form-control " type="password" required id="pwd1" placeholder="Enter password" style="margin-bottom: 10px;">
+                        <br>
+                        <input class="form-control " type="password" required id="pwd2" placeholder="Confirm password" style="margin-bottom: 10px;">
+                    <!-- </div> -->
+                    <br>
+                    <div class="d-flex justify-content-center">
+                      <button id="buttonbox signup-talent-btn" onclick="saveData();" class="greenbutton regular" style="margin-left: 5%;">Create account</button>
+                    </div>
+              </form>
+                    <!-- <form action="">
                         
                             <input class="form-control" type="text" required placeholder="First name">
                             <br>
                             <input class="form-control " type="text" required placeholder="Last name">
-                          <!-- </div> -->
+                      
                           <br>
-                          <!-- <div style="display: flex; flex-wrap: nowrap; justify-content: space-evenly;"> -->
+
                             <input class="form-control " type="email" required placeholder="Email">
                             <br>
                             <input class="form-control " type="text" required placeholder="Company name">
-                          <!-- </div> -->
+                          
                             <br>
-                          <!-- <div style="display: flex; flex-wrap: nowrap; justify-content: space-evenly;">  -->
+                          
                               <input class="form-control " type="password" required placeholder="Enter password">
                               <br>
                               <input class="form-control " type="password" required placeholder="Confirm password">
-                          <!-- </div> -->
+                          
                           <br>
                           <div class="d-flex justify-content-center">
                             <button id="buttonbox signup-talent-btn" class="greenbutton regular">Create account
                             </button>
                           </div>
-                    </form>
+                    </form> -->
                   </div>    
                 </div>
                 
@@ -144,5 +164,6 @@
 
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+      <script src="signup.js"></script>
     </body>
     </html>

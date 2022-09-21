@@ -18,7 +18,18 @@
             <div class="col-md-6" id="login">
                 <div>
                     <h1>A2S Partner Login</h1>
-                    <input id="e" type="email" placeholder="email"><br>
+                    <form>
+                        <input id="e" type="email" placeholder="email"><br>
+                        <input id="pw" type="password" placeholder="password" autocomplete="off">
+                        <div id="Remember">
+                            <span><input type="checkbox" id="rem"><label for="rem">Remember me</label></span>
+                            <a href="#">forgot?</a>           
+                        </div>
+                        <button type="button" id="loginbtn" onclick="checkData();">login</button>
+                        <p>New User? Create an account for FREE! <br>Click <a href="signup.html">here</a></p>
+                    </form>
+
+                    <!-- <input id="e" type="email" placeholder="email"><br>
                     <input id="pw" type="password" placeholder="password">
                     <div id="Remember">
                         <span><input type="checkbox" id="rem"><label for="rem">Remember me</label></span>
@@ -26,10 +37,10 @@
                     </div>
                     <button id="loginbtn">login</button>
                     <p>New User? Create an account for FREE! <br>Click <a href="signup.html">here</a></p>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
-    
+    <script src="./js/login.js"></script>
 </body>
 </html>
