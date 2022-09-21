@@ -18,7 +18,8 @@
     color: #D4F6CC;
 }
 
-h1 {
+
+/* h1 {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -28,7 +29,7 @@ p {
 
 a {
     text-decoration: none;
-}
+} */
 
 .about-main-div {
     filter: brightness(90%);
@@ -90,9 +91,20 @@ button {
 .talent-category-box {
     margin-left: 5px;
     margin-right: 5px;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 10px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-grow: 1;
-    width: max;
+    /* width: max; */
+}
+
+.talent-category-box:hover  {
+    color: #333333;
+    text-decoration: underline;
+    filter: brightness(50%);
+}
+
+.talent-form-label {
+    background-color: #3CCF4E;
+    color: #F2F2F2;
 }
