@@ -9,13 +9,24 @@
     <link rel="stylesheet" href="../css/nav-footer.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/style.css">
-
-    <title>Company Profile</title>
+    <title>Company Profile Account</title>
 </head>
+<style>
+    #highlights-title{
+        display: flex;
+        justify-content: space-between;
+    }
+    #buttonbox-company{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+</style>
 <body>
     <header>
         <div class="brand">
-            <a href="index.html">
+            <a href="../index.html">
                 <img src="../images/logo.png"> Access Success</a>
             <a></a>
         </div>
@@ -53,18 +64,28 @@
                 </h2>
                 <h3>BPO & Tech Industry</h3>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum rerum dolorum quidem architecto. Odio voluptatum doloribus vero ipsum nobis! Qui obcaecati facilis reiciendis voluptatibus error possimus voluptas deleniti aliquid iusto.</p>
-                <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eum, temporibus similique quod labore eaque reprehenderit. Repellat facere quod est perspiciatis aliquam ut reprehenderit, et magni officiis atque ullam voluptas.<a class="jobs-link" href=""> read more</a>
+                <span><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eum, temporibus similique quod labore eaque reprehenderit. Repellat facere quod est perspiciatis aliquam ut reprehenderit, et magni officiis atque ullam voluptas.
                 </p></span>
-                <div id="buttonbox">
-                    <button class="graybutton regular" href="">View Job Posts</button>
-                    <button class="orangebutton regular" href="">Visit Website</button>
+                <div id="buttonbox-company">
+                    <div>
+                        <button class="graybutton regular" href="">View Job Posts</button>
+                    <button class="graybutton regular" href="">Visit Website</button>
+                    </div>
+                    <div>
+                        <button class="graybutton regular" href="">View as Public</button>
+                        <button class="greenbutton regular" href="">Edit Banner</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="container" id="highlights">
-        <h2>Highlights</h2>
+        <div id="highlights-title">
+            <h2>Highlights</h2>
+            <button class="greenbutton regular">Edit <i class="fa-solid fa-pen-to-square"></i></button>
+        </div>
+        
         <div class="row">
             <div class="col-md-6">
                 <div class="highlights-items">
