@@ -150,5 +150,5 @@ function salaryFilter(){
 
 function submit (){
     let a = "Application submitted"
-    alert(a);
+    alert(a)
 }
