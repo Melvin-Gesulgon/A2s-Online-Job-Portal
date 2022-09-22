@@ -18,6 +18,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <!-- CSS  -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav-footer.css">
     <!-- <link rel="stylesheet" href="form.css"> -->
         <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
@@ -25,38 +26,57 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
-    <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="images/logo.png" style="height: 2rem;"> </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- navbar end -->
+  <header>
+    <div class="brand">
+        <a href="index.html">
+            <img src="images/logo.png"> Access Success</a>
+        <a></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <button id="dropdownSearch">Search</button>
+                    <div class="dropdown-content">
+                        <a href="find_job/searchjobs.html">Jobs</a>
+                        <a href="#">Talents</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <div class="dropdown">
+                    <button id="dropdownSearch">Login</button>
+                    <div class="dropdown-content">
+                        <a href="login_talent.html">Talent</a>
+                        <a href="login_partner.html">Partner</a>
+                    </div>
+                </div>
+            </li>
+            <li><a href="signup.html" id="signupbtn">Signup</a></li>
+        </ul>
+    </nav>
+    <div id="toggle-icon" onclick="toggleMobileMenu(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobile-view">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html" id="signupbtn">Signup</a></li>
+        </ul>
+    </div>
+</header>
   <div class="container pt-1 pb-1 about-main-div rounded">
-      <div class="container mt-5">
-        <h1 class="text-center">What is A2S?</h1> 
-      </div>
 
       <div class="container mt-3">
         <div class="row">
-          <div class="col-md-4"><img class="img-fluid text-center rounded" src="images/about1.svg" style="height: auto; width: 20vw;"" alt=""></div>
-          <div class="col-md-8 text-justify">
+          <div class="col-md-6"><img class="img-fluid text-center rounded" src="images/about1.svg" style="height: auto; width: 100%;" alt=""></div>
+          <div class="col-md-6 text-justify" style="padding-left: 40px;">
+            <h1 style="margin-top:100px; margin-bottom: 30px;">What is A2S?</h1> 
             <p style="text-align: justify; text-justify: inter-word;">Access to Success is an online platform for both jobseekers looking to launch a sustainable career, and companies looking to hire creative and hardworking individuals. Our site removes the nuances of a face to face interview. From our site, you can interact with individuals or companies that could land you that dream job or productive team.</p>
           </div>
       </div>
@@ -69,7 +89,7 @@
         
         <div class="col-md-6">  
           <div class="container mt-3">
-            <h2 class="text-center">Our Mission</h2> 
+            <h2 style="margin-top: 150px">Our Mission</h2> 
           </div>
 
           <div class="container mt-3" style="text-align: justify; text-justify: interword;">
@@ -78,7 +98,7 @@
           </div>
 
           <div class="container mt-3">
-            <h2 class="text-center">Our Vision</h2> 
+            <h2>Our Vision</h2> 
           </div>
 
           <div class="container mt-3" style="text-align: justify; text-justify: interword;">
@@ -95,7 +115,7 @@
   </div>
 
 <div style="padding: 20px; border-radius: 20px;" class="container">
-  <h3 class="text-center">The Team Behind Access to Success(A2S)</h3>
+  <h3 class="text-center" style="margin-bottom: 100px">The Team Behind Access to Success(A2S)</h3>
   <div style="display: flex;">
     
       <div class="col-md-4">
@@ -125,15 +145,15 @@
     </div>
   </div>
 
-      <div class="container mt-5">
+      <div class="container">
         <h2 class="text-center fs-1">Contact us</h2> 
       </div>
       <br>
 
-      <div class="container mt-1">
+      <div class="container">
         <div class="row ">
-            <div class="col-md-7 rounded" style="background-color: #003865;"">
-                <form action="" style="color: white; padding: 30px; border-radius: 50px;">
+            <div class="col-md-7" style="background-color: #003865; border-radius: 50px">
+                <form action="" style="color: white; padding: 60px; border-radius: 50px;">
                     <h5>Full Name</h5>
                     <input class="form-control mb-3"  required type="text" name="Full Name">
                     <h5>Email</h5>
@@ -168,11 +188,49 @@
         </div>
       </div>
 
-      <footer>
-         <div class="container">
-
-         </div>
-      </footer>
+      <footer class="footer">
+        <div class="footer container">
+            <div class="footer-row">
+                <div class="footer-items">
+                    <ul>
+                        <h4>Find Talent</h4>
+                        <li><a href="#">How to Hire</a></li>
+                        <li><a href="#">Limitation</a></li>
+                        <li><a href="#">Report Talent</a></li>
+                    </ul>
+                </div>
+                <div class="footer-items"> 
+                    <ul>
+                        <h4>Find Work</h4>
+                        <li><a href="#">How to find work</a></li>
+                        <li><a href="#">Tips</a></li>
+                        <li><a href="#">Report Client</a></li>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <ul>
+                        <h4>Resources</h4>
+                        <li><a href="#">Help and Support</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <ul>
+                        <li><h4>Company</h4></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul> 
+                </div>
+            </div>
+            <div class="social-links">
+                <h4>Social Handles: </h4>
+            </div>
+        </div>
+    </footer>
 
 
 
