@@ -7,7 +7,7 @@
 function checkData(event) {
 
 // function checkData(event) {
-function checkData() {
+// function checkData() {
 
     // event.preventDefault();
     var enterEmail = document.getElementById('e').value;
@@ -31,7 +31,7 @@ function checkData() {
         
 
         // window.location.href ="hello.html";
-        window.location.assign("./find_job/talent-account-page.html");
+        window.location.assign("find_job/talent-account-page.html");
         // 
         // goToSite();
         // return false;
