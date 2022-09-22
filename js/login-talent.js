@@ -3,8 +3,12 @@
 // }
 
 
+
+function checkData(event) {
+
 // function checkData(event) {
 function checkData() {
+
     // event.preventDefault();
     var enterEmail = document.getElementById('e').value;
     var enterPwd = document.getElementById('pw').value;
