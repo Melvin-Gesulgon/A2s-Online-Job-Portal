@@ -41,13 +41,56 @@ header ul{
     color: #F2F2F2;
 }
 
-header ul a{
+header ul a, #dropdownSearch{
     color: white;
     font-family: 'Roboto';
     font-weight: bold;
     font-size: 30px;
 
 }
+
+#dropdownSearch{
+    border: none;
+    background-color: #003865;
+}
+
+#dropdownSearch:hover{
+    background-color: #003865;
+    filter: brightness(100%);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #333333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f2f2f2}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+    .dropdown:hover .dropbtn {
+    background-color: #3CCF4E;
+  }
+
 
 header ul li{
     padding: 10px;

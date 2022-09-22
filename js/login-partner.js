@@ -26,7 +26,9 @@ function checkData(event) {
         
 
         // window.location.href ="hello.html";
+
         window.location.assign("find_talent/companyprofile_account.html");
+       // window.location.assign("./find_talent/companyprofile_account.html");
         // 
         // goToSite();
         // return false;

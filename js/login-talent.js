@@ -3,7 +3,12 @@
 // }
 
 
+
 function checkData(event) {
+
+// function checkData(event) {
+function checkData() {
+
     // event.preventDefault();
     var enterEmail = document.getElementById('e').value;
     var enterPwd = document.getElementById('pw').value;
@@ -26,7 +31,7 @@ function checkData(event) {
         
 
         // window.location.href ="hello.html";
-        window.location.assign("./find_talent/talent-account-page.html");
+        window.location.assign("./find_job/talent-account-page.html");
         // 
         // goToSite();
         // return false;

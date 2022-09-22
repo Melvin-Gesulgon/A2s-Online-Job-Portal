@@ -303,8 +303,8 @@
 }
 
 #filter{
-    background-color: #D9D9D9;
-    max-height: 750px;
+    /* background-color: #D9D9D9;
+    max-height: 750px; */
     border-radius: 3em;
     padding-left: 1.5em;
     padding-top: 1.5em;
