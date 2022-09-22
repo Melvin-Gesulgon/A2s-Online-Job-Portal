@@ -147,3 +147,8 @@ function salaryFilter(){
         jobSalary3();  
     }
 }
+
+function submit (){
+    let a = "Application submitted"
+    alert(a)
+}

@@ -114,6 +114,16 @@ header ul a:hover{
     padding: 0.3em 0.7em 0.3em 0.7em;
 }
 
+#profilebutton{
+    background-color: #EF5B0C;
+    color:#F2F2F2;
+    border-radius: 2em;
+    padding: 0.3em 0.7em 0.3em 0.7em;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 30px;
+}
+
 .mobile-view #signupbtn{
     color: #EF5B0C;
     background-color: #003865;
