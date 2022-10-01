@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/nav-footer.css">
     <!-- <link rel="stylesheet" href="css/index.css"> -->
@@ -29,11 +30,19 @@
         </div>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../login.html">Login</a></li>
-                <li><a href="../signup.html" id="signupbtn">Signup</a></li>
+                <!-- <li><a href="../index.html">Home</a></li> -->
+                <li><a href="searchjobs_logged.html">Search</a></li>
+                <li><a href="#">Messages</a></li>
+                <!-- <li><a href="talent-account-page.html">Profile</a></li> -->
+                <li>
+                    <div class="dropdown">
+                        <button id="profilebutton">User123</button>
+                        <div class="dropdown-content">
+                            <a href="talent-account-page.html">Profile</a>
+                            <a href="../index.html">Logout</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </nav>
         <div id="toggle-icon" onclick="toggleMobileMenu(this)">
@@ -41,14 +50,23 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
             <ul class="mobile-view">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../login.html">Login</a></li>
-                <li><a href="../signup.html" id="signupbtn">Signup</a></li>
+                <!-- <li><a href="../index.html">Home</a></li> -->
+                <li><a href="searchjobs_logged.html">Search</a></li>
+                <li><a href="#">Messages</a></li>
+                <!-- <li><a href="talent-account-page.html">Profile</a></li> -->
+                <li>
+                    <div class="dropdown">
+                    <button id="profilebutton">User123</button>
+                    <div class="dropdown-content">
+                        <a href="talent-account-page.html">Profile</a>
+                        <a href="../index.html">Logout</a>
+                    </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </header>
+
 
     <div class="container" id="categories2">
         <h3>Search by Category</h3>
@@ -92,19 +110,20 @@
     <div class="container" id="search-result">
         <div class="row">
             <div class="col-md-3" id="filter">
-                <h2>Filter Result</h2>
+                <h2>Filter Jobs</h2>
                 <div>
                     <h3>Salary</h3>
-                    <input type="checkbox" id="0">
+                    <input type="checkbox" id="sahod-0">
                     <label>PHP 0 - PHP <span>14999</span></label><br>
-                    <input type="checkbox" id="15">
+                    <input type="checkbox" id="sahod-1">
                     <label>PHP 15000 - PHP <span>29999</span></label><br>
-                    <input type="checkbox" id="30">
+                    <input type="checkbox" id="sahod-2">
                     <label>PHP 30000 - PHP <span>59999</span></label><br>
-                    <input type="checkbox" id="30">
+                    <input type="checkbox" id="sahod-3">
                     <label>PHP <span>60000</span> - up</label>
+                    <button class="orangebutton regular form-control" onclick="salaryFilter();">Filter By Salary</button>
                 </div>
-                <div>
+                <div id="jobSetup">
                     <h3>Job Setup</h3>
                     <input type="checkbox" id="wfh">
                     <label>Work from Home</label><br>
@@ -112,23 +131,24 @@
                     <label>Office-based</label><br>
                     <input type="checkbox" id="hybrid">
                     <label>Hybrid</label>
+                    <button class="orangebutton regular form-control" onclick="jobSetup();">Filter By Setup</button>
                 </div>
                 <div>
                     <h3>Job Nature</h3>
-                    <input type="checkbox" id="wfh">
+                    <input type="checkbox" id="full-time">
                     <label>Full-time</label><br>
-                    <input type="checkbox" id="office">
+                    <input type="checkbox" id="part-time">
                     <label>Part-time</label><br>
-                    <input type="checkbox" id="hybrid">
+                    <input type="checkbox" id="project-based">
                     <label>Project-based</label><br>
                     <input type="checkbox" id="freelance">
                     <label>Freelance</label><br>
-                    <button class="orangebutton regular form-control">Apply Filter</button>
+                    <button class="orangebutton regular form-control" onclick="jobNature();">Filter by Nature</button>
                 </div>  
             </div>
             <div class="col-md-9" id="jobresults">
 
-                <div class="search-jobcards" id="engineer">
+                <div class="search-jobcards" id="engineer-0">
                     <div id="jobresult-logo">
                         <div>
                             <h2>Engineer</h2>
@@ -141,17 +161,17 @@
                             <div id="tags">
                                 <label>tags:</label>
                                 <button class="graybutton regular">project-based</button>
-                                <button class="graybutton regular office">office-based</button>
+                                <button class="graybutton regular office">work-from-home</button>
                                 <button class="graybutton regular">Engineering & Architecture</button>
                             </div>
                         </div>
                     </div>
                     <div id="jobresult-btn">
-                        <a href="apply.html"class="orangebutton regular nl">Apply</a>
+                        <a href="jobpost.html"class="orangebutton regular nlw">Apply</a>
                     </div>
                 </div>
 
-                <div class="search-jobcards" id="engineer">
+                <div class="search-jobcards" id="engineer-1" >
                     <div id="jobresult-logo">
                         <div>
                             <h2>Engineer IV</h2>
@@ -170,11 +190,11 @@
                         </div>
                     </div>
                     <div id="jobresult-btn">
-                        <a href="apply.html"class="orangebutton regular nl">Apply</a>
+                        <a href="jobpost.html"class="orangebutton regular nlw">Apply</a>
                     </div>
                 </div>
 
-                <div class="search-jobcards" id="engineer">
+                <div class="search-jobcards" id="engineer-2">
                     <div id="jobresult-logo">
                         <div>
                             <h2>Engineer II</h2>
@@ -187,17 +207,17 @@
                             <div id="tags">
                                 <label>tags:</label>
                                 <button class="graybutton regular">full-time</button>
-                                <button class="graybutton regular">office-based</button>
+                                <button class="graybutton regular">hybrid</button>
                                 <button class="graybutton regular">Engineering & Architecture</button>
                             </div>
                         </div>
                     </div>
                     <div id="jobresult-btn">
-                        <a href="apply.html"class="orangebutton regular nl">Apply</a>
+                        <a href="jobpost.html"class="orangebutton regular nlw">Apply</a>
                     </div>
                 </div>
 
-                <div class="search-jobcards" id="accountant">
+                <div class="search-jobcards" id="engineer-3">
                     <div id="jobresult-logo" >
                         <div>
                             <h2>Accountant</h2>
@@ -216,15 +236,16 @@
                         </div>
                     </div>
                     <div id="jobresult-btn">
-                        <a href="apply.html"class="orangebutton regular nl">Apply</a>
+                        <a href="jobpost.html"class="orangebutton regular nlw">Apply</a>
                     </div>
                 </div>
 
-                <div class="search-jobcards" id="accountant">
+                <div class="search-jobcards" id="engineer-4">
                     <div id="jobresult-logo" >
                         <div>
                             <h2>Jr. Accountant</h2>
                             <a href="companyoverview.html" class="jobs-link"><h3>Company XYZ</h3></a>
+                            <br>
                             <p>National Capital Region (NCR)</p>
                             <p>around <span class= "salary">20000</span></p>
                             <h4><i class="fa-solid fa-briefcase"></i> Min. 1 year exp</h4>
@@ -238,11 +259,11 @@
                         </div>
                     </div>
                     <div id="jobresult-btn">
-                        <a href="apply.html"class="orangebutton regular nl">Apply</a>
+                        <a href="jobpost.html"class="orangebutton regular nlw">Apply</a>
                     </div>
                 </div>
 
-                <div class="search-jobcards" id="accountant">
+                <div class="search-jobcards" id="engineer-5">
                     <div id="jobresult-logo" >
                         <div>
                             <h2>Sr. Accountant</h2>
@@ -261,11 +282,11 @@
                         </div>
                     </div>
                     <div id="jobresult-btn">
-                        <a href="apply.html"class="orangebutton regular nl">Apply</a>
+                        <a href="jobpost.html"class="orangebutton regular nlw">Apply</a>
                     </div>
                 </div>
 
-                <div class="search-jobcards" id="admin">
+                <div class="search-jobcards" id="engineer-6">
                     <div id="jobresult-logo">
                         <div>
                             <h2>Admin Staff</h2>
@@ -284,56 +305,61 @@
                         </div>
                     </div>
                     <div id="jobresult-btn">
-                        <a href="apply.html"class="orangebutton regular nl">Apply</a>
+                        <a href="jobpost.html"class="orangebutton regular nlw">Apply</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer>
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-items">
-                        <ul>
-                            <h4>Find Talent</h4>
-                            <li><a href="#">How to Hire</a></li>
-                            <li><a href="#">Limitation</a></li>
-                            <li><a href="#">Report Talent</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-items"> 
-                        <ul>
-                            <h4>Find Work</h4>
-                            <li><a href="#">How to find work</a></li>
-                            <li><a href="#">Tips</a></li>
-                            <li><a href="#">Report Client</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-items">
-                        <ul>
-                            <h4>Resources</h4>
-                            <li><a href="#">Help and Support</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Community</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-items">
-                        <ul>
-                            <li><h4>Company</h4></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Mission</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul> 
-                    </div>
+    <footer class="footer">
+        <div class="footer container">
+            <div class="footer-row">
+                <div class="footer-items">
+                    <ul>
+                        <h4>Find Talent</h4>
+                        <li><a href="#">How to Hire</a></li>
+                        <li><a href="#">Limitation</a></li>
+                        <li><a href="#">Report Talent</a></li>
+                    </ul>
                 </div>
-                <div class="social-links">
-                    <h4>Social Handles: </h4>
+                <div class="footer-items"> 
+                    <ul>
+                        <h4>Find Work</h4>
+                        <li><a href="#">How to find work</a></li>
+                        <li><a href="#">Tips</a></li>
+                        <li><a href="#">Report Client</a></li>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <ul>
+                        <h4>Resources</h4>
+                        <li><a href="#">Help and Support</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <ul>
+                        <li><h4>Company</h4></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul> 
                 </div>
             </div>
-        </footer>
+            <div class="social-links">
+                <h4>Social Handles: </h4>
+                <span>
+                    <a href="www.facebook.com"><i class="bi bi-facebook fs-1 text-success ms-4"></i></a>
+                    <a href="www.github.com"><i class="bi bi-github fs-1 text-success ms-4"></i></a>
+                    <a href="www.linkedin.com"><i class="bi bi-linkedin fs-1 text-success ms-4"></i></a>
+                    <a href="www.facebook.com"><i class="bi bi-messenger fs-1 text-success ms-4"></i></a>
+                    <a href="www.twitter.com"><i class="bi bi-twitter fs-1 text-success ms-4"></i></a>
+                </span>
+            </div>
+        </div>
     </footer>
 </body>
 <script src="../js/for_js.js"></script>

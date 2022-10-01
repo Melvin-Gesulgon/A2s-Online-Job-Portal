@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/nav-footer.css">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
         <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
       <!-- icons -->
@@ -40,16 +39,16 @@
     <nav>
         <ul>
             <!-- <li><a href="../index.html">Home</a></li> -->
-            <li><a href="find-talent.html">Search</a></li>
-            <li><a href="inbox_company.html">Messages</a></li>
+            <li><a href="searchjobs_logged.html">Search</a></li>
+            <li><a href="#">Messages</a></li>
             <!-- <li><a href="talent-account-page.html">Profile</a></li> -->
             <li>
                 <div class="dropdown">
-                <button id="profilebutton">Mngr123</button>
-                <div class="dropdown-content">
-                    <a href="companyprofile_account.html">Profile</a>
-                    <a href="../index.html">Logout</a>
-                </div>
+                    <button id="profilebutton">User123</button>
+                    <div class="dropdown-content">
+                        <a href="talent-account-page.html">Profile</a>
+                        <a href="../index.html">Logout</a>
+                    </div>
                 </div>
             </li>
         </ul>
@@ -60,14 +59,14 @@
         <div class="bar3"></div>
         <ul class="mobile-view">
             <!-- <li><a href="../index.html">Home</a></li> -->
-            <li><a href="find-talent.html">Search</a></li>
-            <li><a href="inbox_company.html">Messages</a></li>
+            <li><a href="searchjobs_logged.html">Search</a></li>
+            <li><a href="#">Messages</a></li>
             <!-- <li><a href="talent-account-page.html">Profile</a></li> -->
             <li>
                 <div class="dropdown">
-                <button id="profilebutton">Mngr123</button>
+                <button id="profilebutton">User123</button>
                 <div class="dropdown-content">
-                    <a href="companyprofile_account.html">Profile</a>
+                    <a href="talent-account-page.html">Profile</a>
                     <a href="../index.html">Logout</a>
                 </div>
                 </div>
@@ -96,13 +95,16 @@
                 </div>
                 <div id="line-break"></div><br>
                 <div class="d-flex justify-content-between" style="margin-left:30px; margin-right:30px">
-                  <button class="button graybutton regular">Bookmark<i class="fa-solid fa-bookmark"></i></button>
-                  <button class="button greenbutton regular">Invite for Interview</button>
+                  <a href="../find_talent/talent-profile.html"class="button graybutton regular">Public View<i class="ms-3 bi bi-eye-fill"></i></a>
+                  <button class="button orangebutton regular">Edit profile<i class="bi bi-pencil-square ms-3"></i></button>
                 </div>
                 <br><br>
                 
                 <div style="margin-left: 20px;">
                     <h3>Employment History</h3>
+                    <div class="d-flex justify-content-end">
+                        <button class="button orangebutton regular mb-3" style="margin-right:20px;"><i class="bi bi-pencil-square"></i></button>
+                    </div>
                     <ul>
                         <li><h5>Project Manager (July 2018- July 2022), <strong>Fire Industries LLC</strong></h5><span><p>Manage overall activities, members and progress of ongoing projects.</p></span></li>
                         <br>
@@ -115,16 +117,18 @@
                 <div style="padding: 20px; border-radius: 20px;">
                         <div class="d-flex justify-content-between">
                             <h3>Skills</h3>
+                            <button class="button orangebutton regular"><i class="bi bi-pencil-square"></i></button>
                         </div>
                     <div class="mt-4">
                         <button class="graybutton regular">Graphic Design</button>
                         <button style="margin-left: 5px;" class="graybutton regular">Project Management</button>
-                        <!-- <button class="greenbutton">skill 3</button><br> -->
+                        <!-- <button class="orangebutton">skill 3</button><br> -->
                     </div>
                 </div>
                 <br>
                 <div class="d-flex justify-content-between" style="margin-right: 20px;">
                   <h3 class="text-start ms-4">Portfolio</h3>
+                  <button class="orangebutton regular"><i class="bi bi-pencil-square"></i></button> 
                 </div>
                 <div style="margin: 15px; border-radius: 15px; padding: 15px;">
                         
@@ -165,6 +169,7 @@
                 <div style="margin-top: 20px;">
                   <div class="d-flex justify-content-between me-3">
                     <h5 style="color: #3CCF4E;" class="text-start ms-3">Availability</h5>
+                    <button class="button orangebutton regular"><i class="bi bi-pencil-square"></i></button>
                   </div>
                   <p style="color: #F2F2F2; padding-bottom: 5px;" class="text-start ms-3">Open for freelancing</p>
                   <h5 style="color: #3CCF4E; margin-top: 15px;" class="text-start ms-3">Hours per Week</h5>
@@ -178,6 +183,7 @@
                 <div style="margin-top: 20px;">
                     <div class="d-flex justify-content-between me-3">
                           <h5 style="color: #3CCF4E;" class="text-start ms-3">Language</h5>
+                         <button class="button orangebutton regular"><i class="bi bi-pencil-square"></i></button>
                     </div>
                   <p style="Color: #F2F2F2; padding-bottom: 5px;" class="text-start ms-3">Filipino, English</p>
                   <h5 style="color: #3CCF4E; margin-top: 15px;" class="text-start ms-3">Certification</h5>
@@ -185,13 +191,17 @@
                   <h5 style="color: #3CCF4E; margin-top: 15px;" class="text-start ms-3">Resume/CV</h5>
                   <p class="text-start ms-3"><a class="jobs-link" href="#">juandelacruz.pdf</a></p>
                   <h5 style="color: #3CCF4E; margin-top: 15px;" class="text-start ms-3">Education</h5>
-                  <p style="Color: #F2F2F2; padding-bottom: 5px; margin-bottom: 60px;" class="text-start ms-3">Bachelor of Science in Industrial Engineering</p>
+                  <p style="Color: #F2F2F2; padding-bottom: 5px; margin-bottom: 20px;" class="text-start ms-3">Bachelor of Science in Industrial Engineering</p>
                 </div>
               
                 <div style="margin-top: 30px; margin-left: 2px; border-radius: 15px; background-color: #003865; width: 300px; height: 300px; padding-top: 20px;">
                     <div class="d-flex justify-content-between me-3">
                         <h5 style="color: #F2F2F2; margin-top: 10px;" class="ms-3">Completed Projects</h5>
+                        <button class="button orangebutton regular"><i class="bi bi-pencil-square"></i></button>
                     </div>
+                    <h5 style="color: #F2F2F2;" class="ms-3 mt-5">Pending applications</h5>
+                    <h5 style="color: #F2F2F2;" class="ms-3 mt-5">Bookmarked job posts</h5>
+                    <h5 style="color: #F2F2F2;" class="ms-3 mt-5">Invitations</h5>
                 </div>
     
              </div>
@@ -207,56 +217,54 @@
       <script src="text/javascript"></script>
 </body>
 
-<footer>
-  <footer class="footer">
-      <div class="container">
-          <div class="row">
-              <div class="footer-items">
-                  <ul>
-                      <h4>Find Talent</h4>
-                      <li><a href="../#">How to Hire</a></li>
-                      <li><a href="../#">Limitation</a></li>
-                      <li><a href="../#">Report Talent</a></li>
-                  </ul>
-              </div>
-              <div class="footer-items"> 
-                  <ul>
-                      <h4>Find Work</h4>
-                      <li><a href="../#">How to find work</a></li>
-                      <li><a href="../#">Tips</a></li>
-                      <li><a href="../#">Report Client</a></li>
-                  </ul>
-              </div>
-              <div class="footer-items">
-                  <ul>
-                      <h4>Resources</h4>
-                      <li><a href="../#">Help and Support</a></li>
-                      <li><a href="../#">News</a></li>
-                      <li><a href="../#">FAQs</a></li>
-                      <li><a href="../#">Community</a></li>
-                  </ul>
-              </div>
-              <div class="footer-items">
-                  <ul>
-                      <li><h4>Company</h4></li>
-                      <li><a href="../#">About Us</a></li>
-                      <li><a href="../#">Mission</a></li>
-                      <li><a href="../#">Careers</a></li>
-                      <li><a href="../#">Contact Us</a></li>
-                  </ul> 
-              </div>
+<footer class="footer">
+  <div class="footer container">
+      <div class="footer-row">
+          <div class="footer-items">
+              <ul>
+                  <h4>Find Talent</h4>
+                  <li><a href="#">How to Hire</a></li>
+                  <li><a href="#">Limitation</a></li>
+                  <li><a href="#">Report Talent</a></li>
+              </ul>
           </div>
-          <div class="social-links">
-              <h4>Social Handles: </h4>
-              <span>                 
-                <a href="www.facebook.com"><i class="bi bi-facebook fs-1 text-success ms-4"></i></a>
-                <a href="www.github.com"><i class="bi bi-github fs-1 text-success ms-4"></i></a>
-                <a href="www.linkedin.com"><i class="bi bi-linkedin fs-1 text-success ms-4"></i></a>
-                <a href="www.facebook.com"><i class="bi bi-messenger fs-1 text-success ms-4"></i></a>
-                <a href="www.twitter.com"><i class="bi bi-twitter fs-1 text-success ms-4"></i></a>
-            </span>
+          <div class="footer-items"> 
+              <ul>
+                  <h4>Find Work</h4>
+                  <li><a href="#">How to find work</a></li>
+                  <li><a href="#">Tips</a></li>
+                  <li><a href="#">Report Client</a></li>
+              </ul>
+          </div>
+          <div class="footer-items">
+              <ul>
+                  <h4>Resources</h4>
+                  <li><a href="#">Help and Support</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Community</a></li>
+              </ul>
+          </div>
+          <div class="footer-items">
+              <ul>
+                  <li><h4>Company</h4></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Mission</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              </ul> 
           </div>
       </div>
-  </footer>
+      <div class="social-links">
+          <h4>Social Handles: </h4>
+          <span>
+              <a href="www.facebook.com"><i class="bi bi-facebook fs-1 text-success ms-4"></i></a>
+              <a href="www.github.com"><i class="bi bi-github fs-1 text-success ms-4"></i></a>
+              <a href="www.linkedin.com"><i class="bi bi-linkedin fs-1 text-success ms-4"></i></a>
+              <a href="www.facebook.com"><i class="bi bi-messenger fs-1 text-success ms-4"></i></a>
+              <a href="www.twitter.com"><i class="bi bi-twitter fs-1 text-success ms-4"></i></a>
+          </span>
+      </div>
+  </div>
 </footer>
 </html>

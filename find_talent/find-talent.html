@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="css/nav-footer.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/nav-footer.css">
+    <link rel="stylesheet" href="../css/style-melvin.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>Document</title>
 </head>
 <script>
@@ -19,17 +23,33 @@
 <body>
     <header>
         <div class="brand">
-            <a href="index.html">
-                <img src="images/logo.png"> Access Success</a>
+            <a href="../index.html">
+                <img src="../images/logo.png"> Access Success</a>
             <a></a>
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="signup.html" id="signupbtn">Signup</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button id="dropdownSearch">Search</button>
+                        <div class="dropdown-content">
+                            <a href="../find_job/searchjobs.html">Jobs</a>
+                            <a href="../find_talent/find-talent.html">Talents</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="../about.html">About</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button id="dropdownSearch">Login</button>
+                        <div class="dropdown-content">
+                            <a href="../login_talent.html">Talent</a>
+                            <a href="../login_partner.html">Partner</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="../signup.html" id="signupbtn">Signup</a></li>
             </ul>
         </nav>
         <div id="toggle-icon" onclick="toggleMobileMenu(this)">
@@ -37,49 +57,63 @@
             <div class="bar2"></div>
             <div class="bar3"></div>
             <ul class="mobile-view">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Search</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="signup.html" id="signupbtn">Signup</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button id="dropdownSearch">Search</button>
+                        <div class="dropdown-content">
+                            <a href="../find_job/searchjobs.html">Jobs</a>
+                            <a href="../find_talent/find-talent.html">Talents</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="../about.html">About</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button id="dropdownSearch">Login</button>
+                        <div class="dropdown-content">
+                            <a href="../login_talent.html">Talent</a>
+                            <a href="../login_partner.html">Partner</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="../signup.html" id="signupbtn">Signup</a></li>
             </ul>
         </div>
     </header>
 
       
 <div class="container">
-        <h1>Find Talent</h1>
-        <br>
-        <h2>Browse by category</h2>
-       
-        <div style="margin-top: 15px;" class="flex-container container">
-            <div style="background-color: #003865; color: #F2F2F2; height: 100px; width: 20px; border-radius: 50px;" class="talent-category-box large button"><a style="color: #F2F2F2;" href="about.html"><p style="padding: 10px 0px 0px 15px;">IT &</p><p style="padding: 0px 0px 0px 10px;">Development</p></a></div>
-
-            <div style="background-color: #003865; color: #F2F2F2; height: 100px; width: 20px; border-radius: 50px;" class="talent-category-box large button"><a style="color: #F2F2F2;" href="about.html"><p style="padding: 10px 0px 0px 15px;">Design &</p><p style="padding: 0px 0px 0px 10px;">Creative</p></a></div>
-            
-            <div style="background-color: #003865; color: #F2F2F2; height: 100px; width: 20px; border-radius: 50px;" class="talent-category-box large button"><a style="color: #F2F2F2;" href="about.html"><p style="padding: 10px 0px 0px 15px;">Sales &</p><p style="padding: 0px 0px 0px 10px;">Marketing</p></a></div>
-            
-            <div style="background-color: #003865; color: #F2F2F2; height: 100px; width: 20px; border-radius: 50px;" class="talent-category-box large button"><a style="color: #F2F2F2;" href="about.html"><p style="padding: 10px 0px 0px 15px;">Writing &</p><p style="padding: 0px 0px 0px 10px;">Translation</p></a></div>
-           
-        </div>
-
-        <div style="margin-top: 15px;" class="container flex-container">
-
-            <div style="background-color: #003865; color: #F2F2F2; height: 100px; width: 20px; border-radius: 50px;" class="talent-category-box large button"><a style="color: #F2F2F2;" href="about.html"><p style="padding: 10px 0px 0px 15px;">Admin &</p><p style="padding: 0px 0px 0px 10px;">Support</p></a></div>  
-            
-            <div style="background-color: #003865; color: #F2F2F2; height: 100px; width: 20px; border-radius: 50px;" class="talent-category-box large button"><a style="color: #F2F2F2;" href="about.html"><p style="padding: 10px 0px 0px 15px;">Finance &</p><p style="padding: 0px 0px 0px 10px;">Accounting</p></a></div>  
-            
-            <div style="background-color: #003865; color: #F2F2F2; height: 100px; width: 20px; border-radius: 50px;" class="talent-category-box large button"><a style="color: #F2F2F2;" href="about.html"><p style="padding: 10px 0px 0px 15px;">Engineering &</p><p style="padding: 0px 0px 0px 10px;">Architecture</p></a></div>  
-            
-            <div style="background-color: #003865; color: #F2F2F2; height: 100px; width: 20px; border-radius: 50px;" class="talent-category-box large button"><a style="color: #F2F2F2;" href="about.html"><p style="padding: 10px 0px 0px 15px;">Legal</a></div>  
-            <!-- <div style="background-color: #3CCF4E; height: 70px; width: max;" class="talent-category-box"><p>Admin &</p><p> Support</p></div>
-            <div style="background-color: #3CCF4E; height: 70px; width: max;" class="talent-category-box"><p>Finance &</p><p> Accounting</p></div>
-            <div style="background-color: #3CCF4E; height: 70px; width: max;" class="talent-category-box"><p>Engineering &</p><p> Architecture</p></div>
-            <div style="background-color: #3CCF4E; height: 70px; width: max;" class="talent-category-box"><p>Legal</p></div> -->
-           
+        <div class="container" id="categories2">
+            <h3>Search by Category</h3>
+            <div id="categoryCards">
+                <div class="card">
+                    <h4>IT & Development</h4>
+                </div>
+                <div class="card">
+                   <h4>Design & Creative</h4>
+                </div>
+                <div class="card">
+                    <h4>Sales and Marketing<h4>
+                </div>
+                <div class="card">
+                    <h4>Writing & Translation<h4>
+                </div>
+                <div class="card">
+                    <h4>Admin & Support<h4>
+                </div>
+                <div class="card">
+                    <h4>Finance & Accounting<h4>
+                </div>
+                <div class="card">
+                    <h4>Engineering <br>& Architecture<h4>
+                </div>
+                <div class="card">
+                    <h4>Legal<h4>
+                </div>
+            </div>
         </div>
         <br><br>
-        <h2 class="text-center">Talent search result</h2>
 
         <br>
             <div class="flex-container">
@@ -120,98 +154,161 @@
                     <input type="checkbox" style="margin-left: 10px">
                     <label for="checkbox" style="padding: 5px;">Project Based</label>
                     <br>
-                    <button class="greenbutton mb-3 ms-3 btn-block" style="width: 200px;"><p class="text-center regular">Apply Filter</p></button>
+                    <button class="greenbutton regular" style="width: 320px;">Apply Filter</button>
 
               </div>
-
-              <div style="flex-grow: 5; margin-left: 5px;">
-                  <div style="background-color: #D9D9D9; height: 300px; width: max; border-radius: 30px; flex-wrap: wrap;" class="flex-container">
-
-                        <div style="flex-grow: 1; justify-content: space-between; padding: 10px; height: 200px; width:200px;">
-                          <img src="images/Joe-kalayo.jpg" style="border-radius: 30px; padding: 10px; width: 200px; height: 200px; justify-content: center;" alt="">
+              <a href="talent-profile.html" class="nl nla">
+                <div style="flex-grow: 5; margin-left: 5px;">
+                    <div style="background-color: #D9D9D9; height: 300px; width: max; border-radius: 30px; flex-wrap: wrap;" class="flex-container">
+  
+                          <div style="flex-grow: 1; justify-content: space-between; padding: 10px; height: 200px; width:200px;">
+                            <img src="../images/Joe-kalayo.jpg" style="border-radius: 30px; padding: 10px; width: 200px; height: 200px; justify-content: center;" alt="">
+                          </div>
+                          <!-- start of talent card 1 -->
+                           <div style="flex-grow: 2; justify-content: space-between;">
+                              <h3 class="text-start" style="padding-top: 30px;">Joe Kalayo</h3>
+                              <p>Graphic Designer/Illustrator</p>
+                              <p>National Capital Region</p>
+                              <p>Full Time</p>
+                              <br>
+                              <button class="graybutton">Add to shortlist</button>
+                              <button class="graybutton">Remove from list</button>
+                              <button class="greenbutton">View profile</button>
+                          </div>
+  
+                         <div style="flex-grow: 3;">
+                              <p class="text-end" style="padding: 25px; left: 500px;"><i class="bi bi-bookmark greenbutton"></i></p>
+      
+                              <p><i class="bi bi-briefcase mx-3"></i>2 years of experience</p>
+                              <p><i class="bi bi-mortarboard mx-3"></i>BS Fine Arts</p>
                         </div>
-                        <!-- start of talent card 1 -->
-                         <div style="flex-grow: 2; justify-content: space-between;">
-                            <h3 class="text-start" style="padding-top: 30px;">Joe Kalayo</h3>
-                            <p>Graphic Designer/Illustrator</p>
-                            <p>National Capital Region</p>
-                            <p>Full Time</p>
-                            <br>
-                            <button>View profile</button>
-                            <button>Add to shortlist</button>
-                            <button>Remove from list</button>
-                        </div>
-
-                       <div style="flex-grow: 3;">
-                            <p class="text-end" style="padding: 25px; left: 500px;"><i class="bi bi-bookmark greenbutton"></i></p>
-    
-                            <p><i class="bi bi-briefcase mx-3"></i>2 years of experience</p>
-                            <p><i class="bi bi-mortarboard mx-3"></i>BS Fine Arts</p>
-                      </div>
-                       
-                </div>
+                         
+                  </div>
+              </a>
+              
                       <!-- end of talent card 1 -->
                       <!-- start of talent card 2 -->
-              <div style="flex-grow: 5; margin-left: 5px; margin-top: 20px;">
-                  <div style="background-color: #D9D9D9; height: 300px; width: max; border-radius: 30px; flex-wrap: wrap;" class="flex-container">
-
-                        <div style="flex-grow: 1; justify-content: space-between; padding: 10px; height: 200px; width:200px;">
-                          <img src="images/juan-dela-croix.jpg" style="border-radius: 30px; padding: 10px; width: 200px; height: 200px; justify-content: center;" alt="">
-                        </div>
-
-                         <div style="flex-grow: 2; justify-content: space-between;">
-                            <h3 class="text-start" style="padding-top: 30px;">Juan Dela Cruz</h3>
-                            <p>Graphic Designer/Project Manager</p>
-                            <p>National Capital Region</p>
-                            <p>Full Time</p>
-                            <br>
-                            <button>View profile</button>
-                            <button>Add to shortlist</button>
-                            <button>Remove from list</button>
-                        </div>
-
-                       <div style="flex-grow: 3; justify-content: space-between;">
-                            <p class="text-end" style="padding: 25px; left: 500px;"><i class="bi bi-bookmark greenbutton text-end"></i></p>
-    
-                            <p><i class="bi bi-briefcase mx-3"></i>5 years of experience</p>
-                            <p><i class="bi bi-mortarboard mx-3"></i>BS Industrial Engineering</p>
-                      </div>
-                       
-                </div>
+            <a href="talent-profile.html" class="nl nla">
+                <div style="flex-grow: 5; margin-left: 5px; margin-top: 20px;">
+                    <div style="background-color: #D9D9D9; height: 300px; width: max; border-radius: 30px; flex-wrap: wrap;" class="flex-container">
+  
+                          <div style="flex-grow: 1; justify-content: space-between; padding: 10px; height: 200px; width:200px;">
+                            <img src="../images/juan-dela-croix.jpg" style="border-radius: 30px; padding: 10px; width: 200px; height: 200px; justify-content: center;" alt="">
+                          </div>
+  
+                           <div style="flex-grow: 2; justify-content: space-between; padding-left: 10px;">
+                              <h3 class="text-start" style="padding-top: 30px;">Juan Dela Cruz</h3>
+                              <p>Graphic Designer/Project Manager</p>
+                              <p>National Capital Region</p>
+                              <p>Full Time</p>
+                              <br>
+                              <button class="graybutton">Add to shortlist</button>
+                              <button class="graybutton">Remove from list</button>
+                              <button class="greenbutton">View profile</button>
+                          </div>
+  
+                         <div style="flex-grow: 3; justify-content: space-between;">
+                              <p class="text-end" style="padding: 25px; left: 500px;"><i class="bi bi-bookmark greenbutton text-end"></i></p>
+      
+                              <p><i class="bi bi-briefcase mx-3"></i>5 years of experience</p>
+                              <p><i class="bi bi-mortarboard mx-3"></i>BS Industrial Engineering</p>
+                        </div> 
+                  </div>
+            </a>
+              
                 <!-- end of talent card 2 -->
                 <!-- start of talent card 3 -->
-              <div style="flex-grow: 5; margin-left: 5px; margin-top: 20px;">
-                  <div style="background-color: #D9D9D9; height: 300px; width: max; border-radius: 30px; flex-wrap: wrap;" class="flex-container">
-
-                        <div style="flex-grow: 1; justify-content: space-between; padding: 10px; height: 200px; width:200px;">
-                          <img src="Roadie-Fernandez.jpg" style="border-radius: 30px; padding: 10px; width: 200px; height: 200px; justify-content: center;" alt="">
-                        </div>
-
-                         <div style="flex-grow: 2; justify-content: space-between;">
-                            <h3 class="text-start" style="padding-top: 30px;">Roadie Fernandez</h3>
-                            <p>Data Scientist</p>
-                            <p>Baguio</p>
-                            <p>Full Time</p>
-                            <br>
-                            <button>View profile</button>
-                            <button>Add to shortlist</button>
-                            <button>Remove from list</button>
-                        </div>
-
-                       <div style="flex-grow: 3; justify-content: space-between;">
-                            <p class="text-end"  style="padding: 25px; left: 500px;"><i class="bi bi-bookmark greenbutton"></i></p>
-    
-                            <p><i class="bi bi-briefcase mx-3"></i>7 years of experience</p>
-                            <p><i class="bi bi-mortarboard mx-3"></i>BS Statistics</p>
-                      </div> 
-                </div>
-            </div>
+            <a href="talent-profile.html" class="nl nla">
+                <div style="flex-grow: 5; margin-left: 5px; margin-top: 20px;">
+                    <div style="background-color: #D9D9D9; height: 300px; width: max; border-radius: 30px; flex-wrap: wrap;" class="flex-container">
+  
+                          <div style="flex-grow: 1; justify-content: space-between; padding: 10px; height: 200px; width:200px;">
+                            <img src="../images/Roadie-Fernandez.jpg" style="border-radius: 30px; padding: 10px; width: 200px; height: 200px; justify-content: center;" alt="">
+                          </div>
+  
+                           <div style="flex-grow: 2; justify-content: space-between;">
+                              <h3 class="text-start" style="padding-top: 30px;">Roadie Fernandez</h3>
+                              <p>Data Scientist</p>
+                              <p>Baguio</p>
+                              <p>Full Time</p>
+                              <br>
+                              <button class="graybutton">Add to shortlist</button>
+                              <button class="graybutton">Remove from list</button>
+                              <button class="greenbutton">View profile</button>
+                          </div>
+  
+                         <div style="flex-grow: 3; justify-content: space-between;">
+                              <p class="text-end"  style="padding: 25px; left: 500px;"><i class="bi bi-bookmark greenbutton"></i></p>
+      
+                              <p><i class="bi bi-briefcase mx-3"></i>7 years of experience</p>
+                              <p><i class="bi bi-mortarboard mx-3"></i>BS Statistics</p>
+                        </div> 
+                  </div>
+              </div>
+            </a>
+              
             <!-- end of talent card 3 -->
 
-      </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
 
       
       <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<footer class="footer">
+    <div class="footer container">
+        <div class="footer-row">
+            <div class="footer-items">
+                <ul>
+                    <h4>Find Talent</h4>
+                    <li><a href="#">How to Hire</a></li>
+                    <li><a href="#">Limitation</a></li>
+                    <li><a href="#">Report Talent</a></li>
+                </ul>
+            </div>
+            <div class="footer-items"> 
+                <ul>
+                    <h4>Find Work</h4>
+                    <li><a href="#">How to find work</a></li>
+                    <li><a href="#">Tips</a></li>
+                    <li><a href="#">Report Client</a></li>
+                </ul>
+            </div>
+            <div class="footer-items">
+                <ul>
+                    <h4>Resources</h4>
+                    <li><a href="#">Help and Support</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+            <div class="footer-items">
+                <ul>
+                    <li><h4>Company</h4></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul> 
+            </div>
+        </div>
+        <div class="social-links">
+            <h4>Social Handles: </h4>
+            <span>                 
+                <a href="www.facebook.com"><i class="bi bi-facebook fs-1 text-success ms-4"></i></a>
+                <a href="www.github.com"><i class="bi bi-github fs-1 text-success ms-4"></i></a>
+                <a href="www.linkedin.com"><i class="bi bi-linkedin fs-1 text-success ms-4"></i></a>
+                <a href="www.facebook.com"><i class="bi bi-messenger fs-1 text-success ms-4"></i></a>
+                <a href="www.twitter.com"><i class="bi bi-twitter fs-1 text-success ms-4"></i></a>
+            </span>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
